@@ -33,3 +33,8 @@ powerGuard x n
     | otherwise = x * powerGuard x (decrement n)
 
 -- TODO: Power Tower function
+
+-- Factorial
+factorial :: Int -> Int
+factorial 0 = 1
+factorial x = mult x $ factorial $ x-1
