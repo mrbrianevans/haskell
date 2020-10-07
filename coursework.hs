@@ -1,6 +1,3 @@
-
-import Data.Char (ord)
-
 -- Returns True if all numbers are unique in the tuple
 rule1 :: (Int, Int, Int, Int, Int, Int) -> Bool
 rule1 (a, b, c, d, e, f) = uniqueList1 [a, b, c, d, e, f] == False
@@ -64,3 +61,16 @@ isSolution (a, b, c, d, e, f) = rule1 (a, b, c, d, e, f)
                               && rule4 (a, b, c, d, e, f)
 
 allSolutions = filter isSolution possibles
+
+-- returns the ASCII code for number characters
+ord :: Char -> Int
+ord '0' = 48
+ord '1' = 49
+ord '2' = 50
+ord '3' = 51
+ord '4' = 52
+ord '5' = 53
+ord '6' = 54
+ord '7' = 55
+ord '8' = 56
+ord '9' = 57
